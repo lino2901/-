@@ -1,0 +1,32 @@
+a = int(input())
+if 9999 > a < 10000:
+    one = a//1000
+    four = a%10
+    b = a // 100
+    two = b % 10
+    c = a % 100
+    d = c // 1
+    three = d // 10
+    print(one, two, three, four)
+    sum1 = one + two
+    sum2 = three + four
+    if sum1 == sum2:
+        print('суммы равны')
+    else:
+        print('суммы не равны')
+    sum_abs = sum1 + sum2
+    if sum_abs // 3:
+        print('сумма кратна 3')
+    else:
+        print('сумма не кратна 3')
+    proizvedenie = one * three * two * four
+    if proizvedenie // 4:
+        print('произведение кратно 4')
+    else:
+        print('произведение не кратно 4')
+    if proizvedenie // a:
+        print('произведение кратно введенному числу')
+    else:
+        print('произведение не кратно введенному числу')
+else:
+    print('Цисло не прошло проверку')
