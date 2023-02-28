@@ -1,0 +1,32 @@
+a = int(input())
+if 999 >= a < 1000:
+    print('Число прошло проверку')
+    one = a//100
+    three = a%10
+    b = a % 100
+    two = b // 10
+    print(one, two, three)
+    summa = one + two + three
+    if 9 > summa < 10:
+        print("сумма - двузначное число ")
+    else:
+        print('сумма - не двузначное число')
+    proizvedenie = one * two * three
+    if 9 > proizvedenie < 10:
+        print("произведение - двузначное число ")
+    else:
+        print('произведение - не двузначное число')
+    if proizvedenie > a:
+        print('произведение больше введенного числа')
+    else:
+        print('произведение меньше введенного числа')
+    if summa // 5:
+        print('сумма кратна 5')
+    else:
+        print('сумма не кратна 5')
+    if summa // a:
+        print('сумма кратна введенному числу')
+    else:
+        print('сумма не кратна введенному числу')
+else:
+    print('Число не прошло проверку')
