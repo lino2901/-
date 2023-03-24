@@ -1,0 +1,22 @@
+year = int(input())
+iskluchenie = year // 10
+visokos(year)
+
+def visokos(year, iskluchenie):
+    if year // 4:
+        return true
+    else:
+        quit()
+    if year // 100:
+        return true
+    else:
+        quit()
+    if iskluchenie // 400:
+        return true
+    else:
+        quit()
+    if year >= 366:
+        return true
+    else:
+        quit()
+
