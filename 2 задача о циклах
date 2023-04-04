@@ -1,0 +1,15 @@
+a = 0
+i = 0
+n = 20
+while n>i:
+    print(a)
+    a += 2
+    i += 1
+
+q = -1
+b = 1
+c = 21
+while c>b:
+    print(q)
+    q += -3
+    b += 1
