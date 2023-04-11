@@ -1,0 +1,7 @@
+a = 2
+b = 20
+while a < b:
+    f = 2*a
+    z = 8*f**2 - f
+    print(z)
+    a += 2
