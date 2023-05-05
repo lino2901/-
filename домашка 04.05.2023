@@ -1,0 +1,15 @@
+from random import randint
+n = randint(-10, 10)
+x = 0
+while True:
+    text = input("Введите число или стоп для выхода: ")
+    if text == "стоп":
+        print("Выход из программы! До встречи! Загадано было", n)
+        break
+    elif int(text) == n:
+        print("Победа")
+        break
+    else:
+        print("Попробуйте еще")
+    x += 1
+    print(x)
