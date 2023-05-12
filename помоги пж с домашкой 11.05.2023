@@ -1,0 +1,56 @@
+1)
+for i in range(11, 23):
+    inc = i
+    santimetri = inc * 25.4
+    print(str(inc) + "\t" + str(santimetri))
+2)
+for i in range(1, 21):
+    usd = i
+    rub = usd * 70
+    print(str(usd) + "\t" + str(rub))
+3)
+import math
+
+for i in range (1,21):
+    result = math.exp(i)
+    print("e'{} = {}".format(i, result))
+4)
+for num in range(1,22):
+    print(num+0.1)
+5)
+for num in range (21, 30):
+    print(num/10)
+6)
+for num in range(2,41,2):
+    print(num)
+7)
+for num in range(1, 31, 2):
+    print(num)
+    if num == 29:
+        break
+8)
+import math
+
+for i in range(2, 21, 2):
+    print(f"Корень из {i} равен {math.sqrt(i)}")
+9)
+price = 100
+for kg in range(2, 11):
+    cost = price * kg
+    print(f"{kg} кг конфет стоят {cost} рублей")
+
+10)
+import math
+
+a = float(input("Введите значение a: "))
+b = float(input("Введите значение b: "))
+h = float(input("Введите значение шага h: "))
+if a >= b or h <= 0:
+    print("Вы ошиблись в вводе")
+else:
+    print(" x | y ")
+    print("---|---")
+    for x in range(int(a*100), int(b*100)+1, int(h*100)):
+        x = x / 100
+        y = math.sqrt(x)
+        print("{:.1f}|{:.2f}".format(x, y)) 
