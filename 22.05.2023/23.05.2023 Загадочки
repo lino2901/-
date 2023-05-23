@@ -1,0 +1,76 @@
+
+def zagadka1():
+    print('Загадка №1\n Оно принадлежит только вам, но другими людьми оно используется больше вас. О чем идет речь? \n На каждую загадку есть по 3 попытки!')
+    n = 1
+    x = 0
+    tries = 3
+    answer = input('Введите ответ:')
+    answer = answer.lower()
+    while n < 4:
+        if tries == 0:
+            print('Game over')
+            quit()
+        if answer == 'ваше имя':
+            print('Правильный ответ!')
+            x += 1
+            break
+        else:
+            print('Ответ неверный, попробуйте еще раз')
+            tries = tries - 1
+            n += 1
+            answer = input('Введите ответ:')
+            print(f'Жизней осталось:{tries}')
+            continue
+
+    print('Загадка №2\n Чем больше этого есть, тем меньше вы можете видеть. О чем идет речь?\n На каждую загадку есть по 3 попытки!')
+    z = 0
+    answer2 = input('Введите ответ:')
+    answer2 = answer2.lower()
+    while z < 4:
+            if tries == 0:
+                print('Game over')
+                quit()
+            if answer2 == 'темнота':
+                print('Правильный ответ!')
+                x += 1
+                break
+            else:
+                print('Ответ неверный, попробуйте еще раз')
+                tries = tries - 1
+                z += 1
+                answer = input('Введите ответ:')
+                print(f'Жизней осталось:{tries}')
+                continue
+
+    print('Загадка №3\n Меня можно разрушить, не касаясь меня, можно даже не видеть меня. Кем я могу быть?\n На каждую загадку есть по 3 попытки!')
+    k = 0
+    answer3 = input('Введите ответ:')
+    answer3 = answer3.lower()
+    while k < 4:
+        if answer3 == 'тишина':
+            if tries == 0:
+                print('Game over')
+                quit()
+            print('Правильный ответ!')
+            x += 1
+            break
+        else:
+            print('Ответ неверный, попробуйте еще раз')
+            tries = tries - 1
+            k += 1
+            answer = input('Введите ответ:')
+            print(f'Жизней осталось:{tries}')
+            continue
+    if tries == 0:
+        print('Game over')
+        quit()
+    if tries == 3:
+        print('Вы прошли игру с максимальным здоровьем!')
+    total = n + z + k
+    print(f'Количество попыток {total}')
+
+
+zagadka1()
+
+
+
