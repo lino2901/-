@@ -3,7 +3,7 @@ def zagadka1():
     print('Загадка №1\n Оно принадлежит только вам, но другими людьми оно используется больше вас. О чем идет речь? \n  ')
     n = 1
     x = 0
-    tries = 3
+    tries = 2
     answer = input('Введите ответ:')
     answer = answer.lower()
     while n < 4:
@@ -74,7 +74,7 @@ def zagadka2():
     print('Загадка №1\n Вы заходите в тёмную кухню. В ней есть свеча, керосиновая лампа и газовая плита. Что вы зажжёте в первую очередь? \n')
     n = 1
     x = 0
-    tries = 3
+    tries = 2
     answer = input('Введите ответ:')
     answer = answer.lower()
     while n < 4:
@@ -91,7 +91,6 @@ def zagadka2():
             n += 1
             answer = input('Введите ответ:')
             print(f'Жизней осталось:{tries}')
-            continue
 
     print('Загадка №2\n У семерых братьев по сестре. Сколько всего сестер?\n')
     z = 0
@@ -142,7 +141,7 @@ def zagadka3():
     print('Загадка №1\n Сколько раз можно вычесть 3 из 25?\n')
     n = 1
     x = 0
-    tries = 3
+    tries = 2
     answer = input('Введите ответ:')
     answer = answer.lower()
     while n < 4:
@@ -227,4 +226,3 @@ while True:
         break
     else:
         print("Вы ввели не правильное значение")
-
