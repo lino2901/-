@@ -1,0 +1,27 @@
+def season(number):
+    if number == 1:
+        print('zima')
+    if number == 2:
+        print('zima')
+    if number == 3:
+        print('vesna')
+    if number == 4:
+        print('vesna')
+    if number == 5:
+        print('vesna')
+    if number == 6:
+        print('leto')
+    if number == 7:
+        print('leto')
+    if number == 8:
+        print('leto')
+    if number == 9:
+        print('osen')
+    if number == 10:
+        print('osen')
+    if number == 11:
+        print('osen')
+    if number == 12:
+        print('zima')
+number = int(input('Введите число месяца'))
+season(number)
