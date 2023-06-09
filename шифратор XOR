@@ -1,13 +1,19 @@
+key = int(input("Введите ключ"))
 def xor_cipher(str, key):
-    encript_str = ""
+    shifr_str = ""
     for letter in str:
-        encript_str += chr(ord(letter) ^ key)
-    return encript_str
+        shifr_str += chr(ord(letter) ^ key)
+    return shifr_str
+    print("зашифрованный текст:\n", shifr_strg)
+
+def xor_cipher_encrypt(str, key):
+    print("расшифрованный текст:\n", xor_cipher(shifr_strg, key))
 
 
-strg = input()
+strg = input("Введите строку для шифрации")
 key = 8
-print("original:\n", strg)
-encr_strg = xor_cipher(strg, key)
-print("encript:\n", encr_strg)
-print("decript:\n", xor_cipher(encr_strg, key))
+print("ваш текст:\n", strg)
+shifr_strg = xor_cipher(strg, key)
+xor_cipher_encrypt(strg, key)
+print("зашифрованный текст:\n", shifr_strg)
+
